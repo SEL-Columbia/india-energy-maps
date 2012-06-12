@@ -14,13 +14,17 @@
         <div id='branding'></div>
         <div id="about">
             <h1>Energy Use in India</h1>
-            <p>Over the past few years, Washington DC has been undergoing economic, social, and demographic shifts. Property values in particular have been changing rapidly as parts of the city undergo aggressive development. See how these factors are shaping DC.</p>
+            <p>With the growth in population, there has been constant increase in demand for food and energy. Availability of energy sources helped farmers to pump out ground water to meet the growing demands for food but years of pumping has resulted in drop in the average depth of ground water. This resulted in increase in demand in energy and stress in agricultural output. This project looks into calculations of energy for each district based on information from census data in India. The methodology is described in the next section.
+
+			</p>
             
         </div>
     </div>
     
     <div id="projects" class="layers">
-       <a data-control="layer" href="#kerosene">Kerosene Use for Lighting, 2011</a>
+       <a data-control="layer" href="#kerosene">Kerosene Use for Lighting, 2011(Total)</a>
+		<a data-control="layer" href="#percent">Kerosene Use for Lighting, 2011(Percentage)</a>
+
        <a data-control="layer" href="#biomass">Solid Biomass Use for Cooking, 2011</a>
     </div>
     <div id="crime" class="layers">
@@ -70,10 +74,22 @@
         // the href hash of an element with a `data-control='layer'`, ex:
         // <a data-control="layer" href="#building">Building Permits, 2011</a>
         main.layers({
-            kerosene: {                     // The name of the layer
+            percent: {                     // The name of the layer
                 // If api is specified, this map layer will be displayed
                 // on top of the base map specified when the map was initialized
                 api: 'http://a.tiles.mapbox.com/v3/modilabs.india-kerosene-use-pct.jsonp',
+    			
+                center: {                   // Optionally reposition the map.
+                    lat: 20,   // New center point and zoom level
+                    lon: 77,   // for the map. Specific either
+                    zoom: 5,               // lat and lon, zoom, or both.
+                    ease: 500               // Optional time to animimate moving
+                }                           // the map in milliseconds.
+            },
+			kerosene: {                     // The name of the layer
+                // If api is specified, this map layer will be displayed
+                // on top of the base map specified when the map was initialized
+                api: 'http://a.tiles.mapbox.com/v3/modilabs.india-households-using-kerosene-lighting.jsonp',
     			
                 center: {                   // Optionally reposition the map.
                     lat: 20,   // New center point and zoom level
