@@ -94,7 +94,10 @@
             kharif: { api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-theft.jsonp' },
             summer: { api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-auto.jsonp' }
          });
-                 
+         // SIMULATE CLICKING THE FIRST LAYER ON
+		$(function () {
+			$('#projects a:first').click();
+		});
     </script>
 </body>
 </html>
