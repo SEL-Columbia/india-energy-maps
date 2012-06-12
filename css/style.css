@@ -130,7 +130,7 @@ body > div {
     }
 
 .layers {
-    position: absolute;
+    /*position: absolute;*/
     width: 120px;
     left: 10px;
     top: 80px;
