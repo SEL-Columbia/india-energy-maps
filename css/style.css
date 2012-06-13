@@ -78,8 +78,7 @@ a {
 
 /* Layout */
 #header {
-	display: block;
-    margin: 10px 10px;
+	/*background:black;*/
 }
 
 h1 {
@@ -104,7 +103,7 @@ body > div {
     z-index: 0;
     }
 
-/*#branding {
+#branding {
 	position: absolute;
     height: 145px;
     width: 500px;
@@ -112,7 +111,7 @@ body > div {
     float: right;
     background: url(../img/modi_logo.png) 30px 60px no-repeat;
     }
-*/
+
 #content {
 	position: absolute;
     height: 50px;
@@ -349,7 +348,7 @@ a.zoomer {
     }
 
 .wax-attribution {
-    bottom: 150px;
+    bottom: 0px;
     }
 
 .wax-share h3 {

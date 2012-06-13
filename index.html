@@ -11,20 +11,18 @@
 <body>
 
 <div id='header'>	  
-	 <h1>Energy Use in India</h1>
-	
+	 <h1 align="center">Energy Use in India</h1>
 </div>	
 
 	<div id="content">
-        <!--<div id='branding'></div>-->
+        <div id='branding' align='right'></div>
         
 		<div id="about">
             
-            <p align="justify">Disclaimer:
+            <p align="justify">
+			Disclaimer:
 			The boundaries and names shown and the designation used on this map do
 			not imply official endorsement or acceptance by the United Nations.
-	
-
 			</p>
             
         </div>
@@ -55,7 +53,7 @@
         // Make a new map in the #map element
         var main = Map('map', {
             // Specify the MapBox API url
-            api: 'http://a.tiles.mapbox.com/v3/mapbox.mapbox-light.jsonp',
+            api: 'http://a.tiles.mapbox.com/v3/mapbox.mapbox-zenburn.jsonp',
             center: {
                 lat: 20,      // Intial center point and zoom level.
                 lon: 77,      // To find coordinates and zoom levels
@@ -76,6 +74,7 @@
         // a name and an object of settings. The layers are bound by name to
         // the href hash of an element with a `data-control='layer'`, ex:
         // <a data-control="layer" href="#building">Building Permits, 2011</a>
+
         main.layers({
             percent: {                     // The name of the layer
                 // If api is specified, this map layer will be displayed
