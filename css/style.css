@@ -78,7 +78,8 @@ a {
 
 /* Layout */
 #header {
-	
+	display: block;
+    margin: 10px 10px;
 }
 
 h1 {
@@ -87,7 +88,8 @@ h1 {
     }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+	/*background:black;*/
     }
 
 body > div {
@@ -105,9 +107,9 @@ body > div {
 /*#branding {
 	position: absolute;
     height: 145px;
-    width: 550px;
-    left: 0;
-    float: left;
+    width: 500px;
+    left: 100px;
+    float: right;
     background: url(../img/modi_logo.png) 30px 60px no-repeat;
     }
 */
@@ -129,7 +131,7 @@ body > div {
     width: 100%;
     float: left;
     padding: 0 0px;
-    border-left: 0px solid #bbb;
+    /*border-left: 0px solid #bbb;*/
     }
 
 .layers {
@@ -264,7 +266,7 @@ a.zoomer {
     }
     
 .wax-tooltip .inner:first-letter {
-    text-transform: uppercase;
+    text-transform: capitalize;
     }
     
 .wax-tooltip .desc2 { font-style: italic; }
@@ -300,9 +302,9 @@ a.zoomer {
 .wax-legends {
     left: auto;
     right: 10px;
-    height: 200px;
+    height: 300px;
     overflow-x: hidden;
-    bottom: 150px;
+    bottom: 100px;
     font-size: 11px;
 	font: .9em/1.5em 'OpenSans', sans-serif;
     }
@@ -335,7 +337,7 @@ a.zoomer {
     width: 30px;
     float: left;
     text-align: center;
-    font-size: 9px;
+    font-size: 10px;
     }
 
 .wax-legends .scale label {
@@ -347,11 +349,11 @@ a.zoomer {
     }
 
 .wax-attribution {
-    bottom: 205px;
+    bottom: 150px;
     }
 
 .wax-share h3 {
-    margin: 0px 0px 10px;
+    margin: 0px 0px 50px;
     font-size: 16px;
     font-weight: normal;
     }
@@ -368,7 +370,7 @@ a.zoomer {
     }
 
 .share {
-    top: 60px;
+    top: 120px;
     z-index: 2;
     }
     
