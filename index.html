@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>DC's Changing Landscape</title>
+    <title>India's Energy Use</title>
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/map.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -14,24 +14,22 @@
         <div id='branding'></div>
         <div id="about">
             <h1>Energy Use in India</h1>
-            <p>With the growth in population, there has been constant increase in demand for food and energy. Availability of energy sources helped farmers to pump out ground water to meet the growing demands for food but years of pumping has resulted in drop in the average depth of ground water. This resulted in increase in demand in energy and stress in agricultural output. This project looks into calculations of energy for each district based on information from census data in India. The methodology is described in the next section.
+            <p align="justify">Note: <br>
+			The boundaries and names shown and the designation used on this map do
+			not imply official endorsement or acceptance by the United Nations.
+	
 
 			</p>
             
         </div>
     </div>
-    
-    <div id="projects" class="layers">
-       <a data-control="layer" href="#kerosene">Kerosene Use for Lighting, 2011(Total)</a>
-	   <a data-control="layer" href="#percent">Kerosene Use for Lighting, 2011(Percentage)</a>
-       <a data-control="layer" href="#biomass">Solid Biomass Use for Cooking, 2011</a>
-    </div>
-    <div id="crime" class="layers">
-       <a data-control="layer" href="#energy">Total Energy, 2011</a>
-       <a data-control="layer" href="#rabi">Rabi, 2011</a>
-       <a data-control="layer" href="#kharif">Kharif, 2011</a>
-       <a data-control="layer" href="#summer">Summer, 2011</a>
 
+    <div id="projects" class="layers">
+       <a data-control="layer" href="#kerosene">Kerosene Use for Lighting, 2011 ( by Total)</a><br>
+	   <a data-control="layer" href="#percent">Kerosene Use for Lighting, 2011 ( by Percentage)</a>
+       <a data-control="layer" href="#biomass">Solid Biomass Use for Cooking, 2011</a>
+       <a data-control="layer" href="#energy">Estimated Energy Use for Agriculture</a>
+       
     </div>
     <div id="map" class="map">
     </div>
@@ -104,10 +102,8 @@
             energy: { 
                 api: 'http://a.tiles.mapbox.com/v3/modilabs.india-agriculture-total-energy-use-per-year.jsonp',
                 center: { zoom: 5,lat: 20, lon: 77, ease: 1000 }
-             },
-            rabi: 	{ api: 'http://a.tiles.mapbox.com/v3/modilabs.india-agriculture-rabi.jsonp' },
-            kharif: { api:'http://a.tiles.mapbox.com/v3/modilabs.india-agriculture-kharif.jsonp' },
-            summer: { api:'http://a.tiles.mapbox.com/v3/modilabs.india-agriculture-summer.jsonp' }
+             }
+            
          });
          // SIMULATE CLICKING THE FIRST LAYER ON
 		$(function () {

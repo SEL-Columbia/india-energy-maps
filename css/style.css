@@ -102,15 +102,15 @@ body > div {
 #branding {
 	position: absolute;
     height: 145px;
-    width: 150px;
+    width: 550px;
     left: 0;
     float: left;
-    background: url(../img/logo.png) 30px 60px no-repeat;
+    background: url(../img/modi_logo.png) 30px 60px no-repeat;
     }
 
 #content {
 	position: absolute;
-    height: 200px;
+    height: 150px;
 	width: 100%;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
@@ -122,8 +122,8 @@ body > div {
     }
     
 #about {
-    margin-left: 150px;
-    width: 689px;
+    margin-left: 550px;
+    width: 600px;
     float: left;
     padding: 0 20px;
     border-left: 1px solid #bbb;
@@ -133,7 +133,7 @@ body > div {
     /*position: absolute;*/
     width: 120px;
     left: 10px;
-    top: 80px;
+    top: 200px;
     }
     
 .layers a {
@@ -298,7 +298,7 @@ a.zoomer {
     right: 10px;
     height: 200px;
     overflow-x: hidden;
-    bottom: 215px;
+    bottom: 150px;
     font-size: 11px;
 	font: .9em/1.5em 'OpenSans', sans-serif;
     }
@@ -364,7 +364,7 @@ a.zoomer {
     }
 
 .share {
-    top: 45px;
+    top: 60px;
     z-index: 2;
     }
     
