@@ -77,13 +77,10 @@ a {
     }
 
 /* Layout */
-#header {
-	
-}
 
 h1 {
     display: block;
-    margin: 10px 10px;
+    margin: 20px 0;
     }
 
 p {
@@ -102,7 +99,7 @@ body > div {
     z-index: 0;
     }
 
-/*#branding {
+#branding {
 	position: absolute;
     height: 145px;
     width: 550px;
@@ -110,10 +107,10 @@ body > div {
     float: left;
     background: url(../img/modi_logo.png) 30px 60px no-repeat;
     }
-*/
+
 #content {
 	position: absolute;
-    height: 50px;
+    height: 150px;
 	width: 100%;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
@@ -125,11 +122,11 @@ body > div {
     }
     
 #about {
-    margin-left: 10px;
-    width: 100%;
+    margin-left: 550px;
+    width: 600px;
     float: left;
-    padding: 0 0px;
-    border-left: 0px solid #bbb;
+    padding: 0 20px;
+    border-left: 1px solid #bbb;
     }
 
 .layers {
@@ -141,7 +138,7 @@ body > div {
     
 .layers a {
     padding: 10px;
-    margin: 5px 0px;
+    margin: 1px 0;
     border-left: 5px solid #fff;
     background: white;
     color: #333;
@@ -149,8 +146,7 @@ body > div {
     
 .layers a:hover, .layers a:focus, .layers a.active {
     border-left: 5px solid #333;
-	background:#E31230;
-    /*background: #2da0ef;*/
+    background: #2da0ef;
     color: white;
     }
 
