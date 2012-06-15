@@ -81,6 +81,7 @@ a {
   margin: 0;
   color: #fff;
   background-color: #000;
+  opacity:0.8;
   padding: 9px 0;
 		}
 
@@ -125,8 +126,9 @@ body > div {
 	bottom: 0px;
     background: black; /* old ie */
     /* background: rgba(255,255,255,.9);*/
+	opacity:0.75;
     border-bottom: 1px solid #ccc;
-    border-top: 5px solid #333;
+    /*border-top: 5px solid #333;*/
     overflow-y: hidden;
     z-index: 2;
     }
