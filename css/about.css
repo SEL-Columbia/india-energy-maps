@@ -9,6 +9,7 @@ body {
   color: #fff;
   font: 12pt/1 Helvetica, Arial, sans-serif;
   margin: 0;
+  overflow: auto;
   /* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(top, #1B1E1C 0%, #2B302D 50%, #2B302D 100%);
 
